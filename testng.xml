@@ -16,8 +16,6 @@
  </classes>
  
  </test>
- 
- 
  <test name="hotel">
  
  <parameter name="browserName" value="chrome" />
