@@ -10,8 +10,8 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class HotelTestCase {
-	WebDriver driver;
-	WebDriverWait wait;
+	private WebDriver driver;
+	private WebDriverWait wait;
 
 	private 
 

@@ -1,21 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test thread-count="5" name="Flight(failed)">
-    <parameter name="driverPath" value="/home/cepl/Documents/Selenium things/chromedriver_linux64/chromedriver"/>
-    <parameter name="browserName" value="chrome"/>
-    <parameter name="url" value="https://www.cleartrip.com/"/>
-    <classes>
-      <class name="flight.FlightFunctionality">
-        <methods>
-          <include name="verifyFlightSearch"/>
-          <include name="verifyRoundTtrip"/>
-          <include name="setUp"/>
-          <include name="quiBrowser"/>
-        </methods>
-      </class> <!-- flight.FlightFunctionality -->
-    </classes>
-  </test> <!-- Flight(failed) -->
   <test thread-count="5" name="hotel(failed)">
     <parameter name="browserName" value="chrome"/>
     <parameter name="url" value="https://www.cleartrip.com/"/>

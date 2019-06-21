@@ -15,7 +15,7 @@ import org.testng.asserts.Assertion;
 
 public class FlightBookingTestCase {
 
-	WebDriver driver;
+	private WebDriver driver;
 	private Select adult;
 	private Select auto;
 	By fromcity = By.id("FromTag");

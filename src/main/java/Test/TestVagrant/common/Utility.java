@@ -6,7 +6,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Wait;
 
 public class Utility {
-	Wait wait;
+	private Wait wait;
 	
 	
 	public void holds()
