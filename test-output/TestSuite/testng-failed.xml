@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [TestSuite]" parallel="tests">
+  <test thread-count="2" name="ChromeTest(failed)" parallel="tests">
+    <parameter name="browser" value="Chrome"/>
+    <parameter name="url" value="https://www.cleartrip.com/"/>
+    <classes>
+      <class name="flight.FlightFunctionality">
+        <methods>
+          <include name="verifyFlightSearch"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- flight.FlightFunctionality -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+</suite> <!-- Failed suite [TestSuite] -->

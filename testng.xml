@@ -1,0 +1,33 @@
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+ 
+<suite name="Suite" parallel="none">
+ 
+ <test name="Flight">
+ 
+ <parameter name="browserName" value="chrome" />
+ <parameter name="url" value="https://www.cleartrip.com/" />
+ 
+ <classes>
+
+ <class name="flight.FlightFunctionality" />
+ 
+ </classes>
+ 
+ </test>
+ 
+ 
+ <test name="hotel">
+ 
+ <parameter name="browserName" value="chrome" />
+ <parameter name="url" value="https://www.cleartrip.com/" />
+ 
+ <classes>
+
+ <class name="hotel.HotelTestFunctions" />
+ 
+ </classes>
+ 
+ </test>
+ 
+</suite>

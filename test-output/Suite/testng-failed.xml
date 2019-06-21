@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="hotel(failed)">
+    <parameter name="browserName" value="chrome"/>
+    <parameter name="url" value="https://www.cleartrip.com/"/>
+    <classes>
+      <class name="hotel.HotelTestFunctions">
+        <methods>
+          <include name="setUp"/>
+          <include name="quiBrowser"/>
+          <include name="veriyHotelBooking"/>
+        </methods>
+      </class> <!-- hotel.HotelTestFunctions -->
+    </classes>
+  </test> <!-- hotel(failed) -->
+</suite> <!-- Failed suite [Suite] -->
