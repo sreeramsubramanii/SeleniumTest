@@ -7,6 +7,7 @@
  
  <parameter name="browserName" value="chrome" />
  <parameter name="url" value="https://www.cleartrip.com/" />
+ <parameter name="driverPath" value="/home/cepl/Documents/Selenium things/chromedriver_linux64/chromedriver"/>
  
  <classes>
 

@@ -25,14 +25,17 @@ public class BaseClass {
 	protected WebDriver driver;
 
 	@BeforeClass
-	@Parameters({ "browserName", "url" })
-	public void setUp(String browserName, String url) {
+	@Parameters({ "browserName", "url","driverPath" })
+	public void setUp(String browserName, String url,String driverPath) {
 		switch (browserName.toLowerCase()) {
 		case IConstant.CHROME:
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("--disable-notifications");
+//		System.setProperty("webdriver.chrome.driver",
+//					"/home/cepl/Documents/Selenium things/chromedriver_linux64/chromedriver");
+		
 		System.setProperty("webdriver.chrome.driver",
-					"/home/cepl/Documents/Selenium things/chromedriver_linux64/chromedriver");
+				driverPath);
 	
 			driver = new ChromeDriver(options);
 
